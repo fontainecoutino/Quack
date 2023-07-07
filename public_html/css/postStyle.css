@@ -1,0 +1,136 @@
+/*
+    NAME: Fontaine Coutino
+    DATE: August 12, 2020
+    COURSE: CS 337
+    ASSIGNMENT: FINAL; Quack
+    FILE: postStyle.css
+    PURPOSE: Styling for displaying posts in Quack.
+
+    ** NOTE **
+    Theres different style files in case I want to later change the
+    structure and have each route to be a different html file.
+ */
+
+.post {
+    font-family: Tahoma, sans-serif;
+    margin-bottom: 30px;
+    padding: 15px 5%;
+    background-color: #1A1C29;
+    border-radius: 5px;
+}
+
+/* ----------------------------------- Top ---------------------------------- */
+
+.topPost {
+    font-size: 20px;
+    cursor: default;
+}
+
+.usernamePost,
+.profilePicturePost {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.profilePicturePost {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: #282A3E 2px solid;
+    transition: border-radius .5s;
+}
+
+.profilePicturePost:hover {
+    border-radius: 10px;
+    background-color: #282A3E;
+    cursor: pointer;
+} 
+
+/* ----------------------------------- Mid ---------------------------------- */
+
+.midPost {
+    margin-bottom: 10px;
+}
+
+.textPost {
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+.picturePostDiv {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.picturePost {
+    max-height: 300px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+/* --------------------------------- Bottom --------------------------------- */
+
+.botPost {
+    text-align: right;
+    font-size: 10px;
+}
+
+.postButton {
+    margin-left: 2px;
+    padding: 5px;
+    width: 20px;
+}
+
+.postButton:hover {
+    background-color: #1A1C29;
+}
+
+.likesNumPost,
+.likesBotPost,
+.commentBotPost,
+.commentIconBotPost {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.likesBotPost {
+    margin-right: 15px;
+}
+
+.commentOnPost {
+    width: 200px;
+    padding: 5px 20px;
+
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ef233c;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+    background-color: unset;
+    color: #edf2f4;
+}
+
+.commentOnPost:focus,
+.commentOnPost:hover {
+    background-color: #282A3E;
+    outline: none;
+}
+
+/* -------------------------------- Comments -------------------------------- */
+
+.commentsPost {
+    margin-top: 5px;
+    border-top: #282A3E 1px solid;
+    font-size: 13px;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+.comment:hover {
+    cursor: pointer;
+    background-color: #282A3E;
+    border: 3px;
+}

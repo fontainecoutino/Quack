@@ -1,0 +1,87 @@
+/*
+    NAME: Fontaine Coutino
+    DATE: August 12, 2020
+    COURSE: CS 337
+    ASSIGNMENT: FINAL; Quack
+    FILE: newQuackStyle.css
+    PURPOSE: Styling for adding quacks in Quack.
+
+    ** NOTE **
+    Theres different style files in case I want to later change the
+    structure and have each route to be a different html file.
+ */
+
+form {
+    font-family: Tahoma, sans-serif;
+    padding: 50px 5%;
+    background-color: #1A1C29;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+#newQuackDiv {
+    margin-top: 20%;
+}
+
+textarea,
+#submitQuack {
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ef233c;
+
+    background-color: unset;
+    color: #edf2f4;
+
+    resize: none;
+}
+
+
+textarea:focus {
+    background-color: #282A3E;
+    outline: none;
+}
+
+#submitQuack {
+    color: #ef233c;
+    background-color: unset;
+    font-size: 50px;
+    font-weight: bold;
+
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#submitDiv {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#imageQuack {
+    text-align: left;
+    vertical-align: bottom;
+    padding-bottom: 20px;
+}
+
+#imageIcon {
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+
+#chooseImage:focus,
+#submitQuack:focus {
+    outline: none;
+}
+
+#labelImage {
+    margin-right: 20px;
+}

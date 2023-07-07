@@ -1,0 +1,44 @@
+<!-- 
+    NAME: Fontaine Coutino
+    DATE: August 12, 2020
+    COURSE: CS 337
+    ASSIGNMENT: FINAL; Quack
+    FILE: access.html
+    PURPOSE: This page contains html for Quack. It's purpose is to 
+    either login an user or sign them up.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quack</title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/access.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/acessStyle.css" type="text/css" />
+</head>
+
+<body id="body">
+    <div id="loginDiv" class="infoDiv">
+        <p id="header"> Quack </p>
+        <h2>Log In</h2>
+        <label for="usernameL">Username</label>
+        <input type="text" id="usernameL" class="accessInput" name="usernameL">
+        <label for="passwordL">Password</label>
+        <input type="password" id="passwordL" class="accessInput" name="passwordL">
+        <button id="loginButton" onclick="login()">Log In</button>
+        <button id="forSignUpButton" onclick="loadSignUp();">New to Quack? Sign Up!</button>
+    </div>
+    <script>
+        $('#passwordL').on('keypress', function (e) {
+        if (e.which === 13) {
+            $(this).attr("disabled", "disabled");
+            login()
+        }
+        }); 
+    </script>
+</body>
+
+</html>

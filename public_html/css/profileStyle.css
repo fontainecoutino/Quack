@@ -1,0 +1,89 @@
+/*
+    NAME: Fontaine Coutino
+    DATE: August 12, 2020
+    COURSE: CS 337
+    ASSIGNMENT: FINAL; Quack
+    FILE: profileStyle.css
+    PURPOSE: Styling for profile pages in Quack. 
+
+    ** NOTE **
+    Theres different style files in case I want to later change the
+    structure and have each route to be a different html file.
+ */
+
+
+#profileDiv {
+    border-bottom: #ef233c 1px solid;
+    margin-bottom: 30px;
+    padding: 15px 5%;
+    background-color: #1A1C29;
+    border-radius: 5px;
+}
+
+#profileTop {
+    cursor: default;
+    text-align: left;
+}
+
+#profilePicture {
+    width: 20%;
+    height: 20%;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    border: 3px solid #edf2f4;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+#profilePicture,
+#insideTop {
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 10%;
+}
+
+#username {
+    font-size: 25px;
+    width: 60%;
+    margin: 0px;
+    overflow-wrap: break-word;
+}
+
+.profileBottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.profileButton,
+.infoText {
+    background-color: unset;
+    color: #edf2f4;
+
+    border: none;
+    text-decoration: none;
+
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.profileButton:hover,
+.profileButton:focus {
+    color: #ef233c;
+    cursor: pointer;
+    outline: none;
+}
+
+#followersProfile {
+    padding: 0 5%;
+}
+
+@media only screen and (max-width: 600px) {
+    #profilePicture {
+        width: 40px;
+        height: 40px;
+    }
+    #username {
+        font-size: 15px; 
+    }
+}

@@ -1,0 +1,107 @@
+/*
+    NAME: Fontaine Coutino
+    DATE: August 12, 2020
+    COURSE: CS 337
+    ASSIGNMENT: FINAL; Quack
+    FILE: access.css
+    PURPOSE: Styling for access page in quack.
+
+    ** NOTE **
+    Theres different style files in case I want to later change the
+    structure and have each route to be a different html file.
+ */
+
+/* ---------------------------------- BODY ---------------------------------- */
+
+body {
+    background-color: #1D1F2D;
+}
+
+#header {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2,
+p {
+    cursor: default;
+    text-align: center;
+}
+
+.infoDiv {
+    margin-bottom: 50px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+/* ---------------------------------- FORM ---------------------------------- */
+
+input,
+button {
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ef233c;
+    background-color: unset;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #edf2f4;
+}
+
+input:focus,
+button:focus {
+    background-color: #282A3E;
+    outline: none;
+}
+
+input:hover,
+button:hover {
+    background-color: #282A3E;
+    outline: none;
+}
+
+#loginButton,
+#signUpButton {
+    width: 100%;
+    padding: 16px 32px;
+    margin: 4px 2px;
+
+    color: #edf2f4;
+    background-color: #ef233c;
+
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#forSignUpButton {
+    width: 100%;
+    margin: 4px 2px;
+    text-align: center;
+
+    background-color: unset;
+    color: #ef233c;
+
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#forSignUpButton:hover {
+    color: #edf2f4;
+}
+
+@media only screen and (max-width: 600px) {
+    .infoDiv { 
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
